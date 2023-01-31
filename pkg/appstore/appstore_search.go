@@ -50,7 +50,7 @@ func (a *appstore) searchRequest(term, countryCode string, limit int64) http.Req
 
 func (a *appstore) searchURL(term, countryCode string, limit int64) string {
 	params := url.Values{}
-	params.Add("entity", "software,iPadSoftware")
+	params.Add("entity", "software,iPadSoftware,tvSoftware")
 	params.Add("limit", strconv.Itoa(int(limit)))
 	params.Add("media", "software")
 	params.Add("term", term)
