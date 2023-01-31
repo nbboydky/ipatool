@@ -41,7 +41,7 @@ func (a *appstore) lookupRequest(bundleID, countryCode string) http.Request {
 
 func (a *appstore) lookupURL(bundleID, countryCode string) string {
 	params := url.Values{}
-	params.Add("entity", "software,iPadSoftware")
+	params.Add("entity", "software,iPadSoftware,tvSoftware")
 	params.Add("limit", "1")
 	params.Add("media", "software")
 	params.Add("bundleId", bundleID)
